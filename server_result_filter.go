@@ -2,4 +2,4 @@ package core
 
 import "net/http"
 
-type ResultFilter func(http.HandlerFunc, HandlerResult)
+type ResultFilter func(http.ResponseWriter, *http.Request, HandlerResult)
